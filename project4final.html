@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        scroll-behavior: smooth;
+    }
+
+    section {
+        width: 100%;
+        height: 2000px;
+
+
+    }
+
+    .header {
+        width: 100%;
+        height: 5%;
+        display: inline-block;
+        box-shadow: 0 0 10px rgb(101, 247, 3);
+
+
+
+    }
+
+    .main {
+
+        height: 1500px;
+    }
+
+
+    .footer {
+        width: 100%;
+        height: 2%;
+        text-align: center;
+        background-color: rgb(238, 10, 59);
+        vertical-align: middle;
+        color: rgb(10, 244, 178);
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .ul {
+        width: 50%;
+        background-color: rgba(250, 245, 245, 0.435);
+        display: flex;
+        border-radius: 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        border-radius: 20px;
+    }
+
+    .div1 {
+        background-color: rgba(244, 3, 47, 0.285);
+        width: 20%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+
+
+    }
+
+    .top {
+        z-index: 999;
+        position: fixed;
+        margin: 0px;
+        color: #DE3930;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        position: fixed;
+        bottom: 115px;
+        right: 25px;
+        z-index: 999;
+        font-size: 14px;
+        background: none;
+        border: 2px solid #DE3930;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 34px;
+    }
+
+    .top {
+        width: 40px;
+        height: 30px;
+        background-image: url(/assets/images/arrow\ circle\ up.png);
+        background-size: cover;
+
+    }
+
+    
+
+    .introducing-picture {
+        width: 100%;
+        height: 35%;
+        background-image: url(/assets/images/main3-1.png);
+        background-size: 100% 100%;
+    }
+
+    .logo-picture {
+        width: 100%;
+        height: 100%;
+    }
+
+    .div-logo {
+        width: 11%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    .header-picture {
+        width: 100%;
+        height: 100%;
+    }
+
+    .div-header {
+        width: 88.5%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    .bio-div {
+        width: 100%;
+        height: 15%;
+        display: inline-block
+    }
+
+    .john-picture {
+        width: 100%;
+        height: 100%;
+    }
+
+    .div-biopicture {
+        width: 50%;
+        height: 105%;
+        display: inline-block;
+        box-shadow: 0 0 10px green;
+        position: relative;
+        top: 5px;
+
+    }
+
+    .bio-p-div {
+        width: 48%;
+        height: 100%;
+        overflow-y: scroll;
+        text-align: justify;
+        text-justify: inter-word;
+        display: inline-block;
+        background-color: rgba(255, 127, 80, 0.248);
+        padding: 5px;
+        position: relative;
+        top: 0px;
+        box-shadow: 0 0 10px green;
+
+
+    }
+
+    .bio-p {
+        font-size: 13px;
+
+    }
+
+    .h-bio {
+        text-align: center;
+        background: linear-gradient(90deg, yellow, black);
+    }
+
+    .history-gallery-div {
+        width: 100%;
+    height: 15%;
+    display: flex
+;
+    flex-direction: column;
+    background: linear-gradient(90deg, yellow, black);
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .gallery-div {
+        width: 50%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-arou
+    }
+
+
+    .history-img {
+        width: 20%;
+        height: 50%;
+        border-radius: 15px;
+        transition: all 1.5s;
+
+    }
+
+    .history-img:hover {
+        -ms-transform: scale(4);
+        transform: scale(4);
+    }
+
+    .div-gallerytop {
+        width: 100%;
+        height: 70%;
+    }
+
+    .div-gallerydown {
+        width: 100%;
+        height: 70%;
+    }
+
+    .div-historical-video {
+        width: 50%;
+        height: 100%;
+    }
+
+    .historical-video {
+        width: 100%;
+        height: 100%;
+    }
+    .div-side-menu{
+        width: 45px;
+        height: 200px;
+        background-color: rgba(245, 245, 248, 0.589);
+        display: flex;   
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+        margin-top: 100px;
+        position: fixed;
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .div-products{
+        width: 100%;
+        height: 30%;
+    }
+    .h-products{
+        color: black;
+        background: linear-gradient(90deg, yellow, rgb(243, 139, 4));
+        height: 10%;
+        text-align: center;
+    }
+    .div-harvesters{
+        width: 100%;
+        height: 87%;
+        background-image: url(/assets/images/main2.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+    }
+    .harvest-img{
+        width: 15%;
+        height: 50%;
+        border-radius: 15px;
+        transition: all 1.5s;
+    }
+    .harvest-img:hover {
+        -ms-transform: scale(3);
+        transform: scale(3);
+    }
+    .categories-explanation{
+        display: none;
+
+    }
+    .h-products:hover .categories-explanation{
+        display: inline;
+    }
+    .ul-categories{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .li-categories{
+        color: deeppink;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 15px;
+    }
+    .down-div{
+        width: 100%;
+        height: 30%;
+
+    }
+    
+    .down-img{
+        width: 100%;
+        height: 80%;
+
+    }
+    .div-social-media{
+        width: 100%;
+        height: 19%;
+        background: linear-gradient(90deg, yellow, black);
+
+    }
+    .ul-social-media{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        
+    }
+    .li-social-madia{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        box-shadow: 0 0 10px black;
+        list-style-type: none;
+        margin-left: 10px;
+
+    }
+    .img-social-media{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        transition: all 1.5s;
+
+    }
+    .img-social-media:hover{
+        -ms-transform: scale(3);
+        transform: scale(3);
+    }
+    .section3{
+    width: 100%;
+    height: 15%;
+    display: flex
+;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 5px black;
+    background: linear-gradient(90deg, yellow, black);
+    justify-content: space-evenly;
+    align-content: space-around;
+
+}
+.section3h{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1px; 
+     
+
+}
+.section3chartbox{
+    width: 60%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+.section3chartbox1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+
+
+
+.section3chartboxlefttext1{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.section3chartboxlefttextp1{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    font-weight: bold;
+    
+   
+
+}
+.div-chart1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center
+    
+}
+.section3chartboxall1{
+    width: 470px;
+    background-color: yellow;
+    display: inline-block;
+    height: 8px;
+   
+   
+    
+    
+
+}
+.section3chartboxall1:hover{
+    background-color: aqua;
+   
+}
+.section3chartboxpercent1{
+    width: 150px;
+    background-color:red;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+   
+
+}
+.section3chartboxpercent1:hover{
+    background-color: blue;
+    
+}
+.section3chartboxrighttext1{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    color: chartreuse;
+
+}
+.section3chartboxrighttextp1{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block; 
+    font-weight: bold;
+
+}
+.section3chartbox2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+.section3chartboxlefttext2{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+
+}
+.section3chartboxlefttextp2{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    font-weight: bold;
+   
+
+}
+.section3chartboxall2{
+    width: 470px;
+    background-color: yellow;
+    display: inline-block;
+    height: 8px;
+   
+    
+    
+
+}
+.section3chartboxpercent2{
+    width: 400px;
+    background-color:red;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    
+
+
+}
+.section3chartboxpercent2:hover{
+    background-color: blue;
+    
+}
+.section3chartboxrighttext2{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+
+}
+.section3chartboxrighttextp2{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block; 
+    font-weight: bold;
+   
+
+}
+.section3chartbox3{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+.section3chartboxlefttext3{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+
+}
+.section3chartboxlefttextp3{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    font-weight: bold;
+   
+
+}
+.section3chartboxall3{
+    width: 470px;
+    background-color: yellow;
+    display: inline-block;
+    height: 8px;
+    
+    
+    
+
+}
+.section3chartboxpercent3{
+    width: 375px;
+    background-color:red;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+
+
+}
+.section3chartboxpercent3:hover{
+    background-color: blue;
+   
+}
+.section3chartboxrighttext3{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+
+}
+.section3chartboxrighttextp3{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block; 
+    font-weight: bold;
+   
+
+}
+.section3chartbox4{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+.section3chartboxlefttext4{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+
+}
+.section3chartboxlefttextp4{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    font-weight: bold;
+   
+
+}
+.section3chartboxall4{
+    width: 470px;
+    background-color: yellow;
+    display: inline-block;
+    height: 8px;
+   
+    
+    
+
+}
+.section3chartboxpercent4{
+    width: 440px;
+    background-color:red;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+
+
+}
+.section3chartboxpercent4:hover{
+    background-color: blue;
+   
+}
+.section3chartboxrighttext4{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+
+}
+.section3chartboxrighttextp4{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block; 
+    font-weight: bold;
+    
+}
+.section3chartboxpercent5{
+    width: 395px;
+    background-color:red;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+
+
+}
+.section3chartboxpercent5:hover{
+    background-color: blue;
+    
+}
+.section3chartboxall5{
+    width: 470px;
+    background-color: yellow;
+    display: inline-block;
+    height: 8px;
+}
+
+.side-div{
+    width: 40px;
+    height: 200px;
+    background-color: rgba(0, 255, 0, 0.253);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 10px rgb(245, 241, 4);
+    position: fixed;
+    z-index: 1;
+}
+.top-div1{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    
+    background-image: url(/assets/images/header\ icon.jpg);
+    background-size: 90% 90%;
+
+
+}
+.top-div2{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    
+    background-image: url(/assets/images/about\ icon.png);
+    background-size: 90% 90%;
+
+
+}
+.top-div3{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    
+    background-image: url(/assets/images/products\ icon.png);
+    background-size: 90% 90%;
+
+
+}
+.top-div4{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    
+    background-image: url(/assets/images/chart\ icon.png);
+    background-size: 90% 90%;
+
+
+}
+.top-div5{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    
+    background-image: url(/assets/images/footer\ icon.png);
+    background-size: 90% 90%;
+
+
+}
+.down-div-sidemenu{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: rgb(161, 255, 9);
+    transition: all 1.5s;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    
+
+
+}
+
+.down-div-sidemenu:hover{
+    border-radius: 20px 20px 20px 20px;
+    width: 150px;
+    height: 100%;
+    background-color: rgba(255, 255, 0, 0.424);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px black;
+    justify-content: flex-end;
+    transition: all 1.5s;
+    
+    
+}
+.top-div:hover{
+    background-color: yellow;
+    box-shadow: 0 0 10px black;
+
+}
+h3{
+    font-size: 8px;
+    color: green;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;  
+}
+
+h3:hover{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+@media(max-width:400px){
+    section {
+        width: 470px;
+        height: 2000px;
+    }
+    .header{
+        display: flex;
+    }
+    .div-biopicture {
+        width: 98%;
+        height: 105%;
+        display: inline-block;
+        box-shadow: 0 0 10px green;
+        position: relative;
+        top: 5px;
+
+    }
+    
+    .section3{
+    width: 85%;
+    height: 15%;
+    display: flex
+;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 5px black;
+    background: linear-gradient(90deg, yellow, black);
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+
+    .bio-p-div {
+        width: 83%;
+        height: 100%;
+        overflow-y: scroll;
+        text-align: justify;
+        text-justify: inter-word;
+        display: inline-block;
+        background-color: rgba(255, 127, 80, 0.248);
+        padding: 5px;
+        position: relative;
+        top: 0px;
+        box-shadow: 0 0 10px green;
+
+
+    }
+    .down-div{
+        width: 85%;
+        height: 30%;
+        
+
+    }
+    .down-img{
+       
+        background-color: blueviolet;
+
+    }
+    .section3chartboxall1{
+    width: 390px;
+    background-color: yellow;
+    display: inline-block;
+    height: 8px;
+   
+   
+    
+    
+
+}
+.section3chartboxpercent1{
+    width: 150px;
+    background-color:red;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+   
+
+}
+.section3chartboxpercent2{
+    width: 300px;
+    background-color:red;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    
+
+
+}
+
+.section3chartboxpercent3{
+    width: 275px;
+    background-color:red;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+
+
+}
+.section3chartboxpercent4{
+    width: 340px;
+    background-color:red;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+
+
+}
+.section3chartboxpercent5{
+    width: 295px;
+    background-color:red;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+
+
+}
+.history-gallery-div {
+        width: 90%;
+    height: 15%;
+    display: flex
+;
+    flex-direction: column;
+    background: linear-gradient(90deg, yellow, black);
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .section3chartboxpercent1:hover{
+    background-color: blue;
+        
+}
+.section3chartboxpercent2:hover{
+    background-color: blue;
+    
+}
+.section3chartboxpercent3:hover{
+    background-color: blue;
+   
+}
+.section3chartboxpercent4:hover{
+    background-color: blue;
+   
+}
+.section3chartboxpercent5:hover{
+    background-color: blue;
+    
+}
+
+}
+
+
+   
+
+
+
+
+
+
+</style>
+
+<body id="top">
+
+
+    <section>
+        <header class="header" id="header1">
+            <div class="div-logo">
+                <img src="/assets/images/logo.jpg" class="logo-picture">
+            </div>
+            <div class="div-header">
+                <img src="/assets/images/gif.webp" class="header-picture">
+            </div>
+        </header>
+
+
+
+
+        <main class="main" id="header">
+            <div class="introducing-picture">
+                <section class="side-div">
+                    <div class="top-div1">
+                        <div class="down-div-sidemenu">
+                            <h3 class="h3">
+                                <a href="#header1">Header</a>
+                            </h3>
+                
+                        </div>
+                    </div>
+                    <div class="top-div2">
+                        <div class="down-div-sidemenu">
+                            <h3>
+                                <a href="#history">About</a>
+                            </h3>
+                
+                        </div>
+                    </div>
+                    <div class="top-div3">
+                        <div class="down-div-sidemenu">
+                            <h3>
+                                <a href="#products">Products</a>
+                            </h3>
+                
+                        </div>
+                    </div>
+                    <div class="top-div4">
+                        <div class="down-div-sidemenu">
+                            <h3>
+                                <a href="#chart">Ghart</a>
+                            </h3>
+                
+                        </div>
+                    </div>
+                    <div class="top-div5">
+                        <div class="down-div-sidemenu">
+                            <h3>
+                                <a href="#footer">footer</a>
+                            </h3>
+                
+                        </div>
+                    </div>
+                </section>
+                <div style="position: absolute;right: 600px;top:100px;background-color: rgba(255, 255, 255, 0.397);">
+                    <h4 style="color: black;font-size: 50px;box-shadow: 0 0 10px rgb(247, 247, 3);">We Are The Best!</h4>
+                    <h5 style="color:rgb(11, 10, 11);font-size: 20px;box-shadow: 0 0 10px rgb(101, 247, 3);">I will never put my name on a product that does not have the best that is in me!</h5>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div style="width: 30px;height: 30px;position: fixed;top: 550px;right:85px">
+                <a href="#header1"><img src="/assets/images/arrow circle up.png"
+                        style="width: 100%;height: 100%;border-radius: 100%;"></a>
+            </div>
+            <div style="width: 30px;height: 30px;position: fixed;top: 250px;right:85px">
+                <a href="#footer"><img src="/assets/images/arrow circle up.png"
+                        style="width: 100%;height: 100%;border-radius: 100%;transform: rotate(180deg);" ></a>
+            </div>
+
+
+            <div class="bio-div" id="history">
+                <h1 class="h-bio">
+                    History of johndeere.co
+                </h1>
+                <hr style="width: 100%;color: black;">
+
+                <div class="div-biopicture">
+                    <img class="john-picture" src="/assets/images/main bio picture.png">
+                </div>
+                <div class="bio-p-div">
+                    <p class="bio-p">
+                        John Deere was a blacksmith who developed the first commercially successful, self-scouring steel
+                        plow in 1837 and founded the company that still bears his name.
+
+                        Deere was born in 1804 in Rutland, Vermont. After his father was lost at sea when he was four
+                        years old, Deere was raised solely by his mother. As a young man, he won acclaim for his
+                        workmanship and ingenuity as a blacksmith. When the New England economy collapsed in 1836, he
+                        followed other Vermonters to Illinois, where he established a blacksmith shop in Grand Detour.
+
+                        Shortly after arriving, Deere learned from his farmer customers that the commonly used cast-iron
+                        plows of the day performed poorly in the sticky soil of the Midwest prairie. Soil clung to the
+                        plow bottoms, and farmers had to stop and scrape off the dirt every few feet.
+
+                        Convinced that a plow with a highly polished surface would shed the sticky soil as it moved
+                        through the field, Deere made a plow using steel from a broken sawblade. The need for a
+                        self-scouring plow was so great, it is said hundreds of people gathered at the farm of Lewis
+                        Crandall near Grand Detour to see the young blacksmith test his new product. It wasn’t long
+                        before manufacturing plows became not only Deere’s identity, but his business as well.
+
+                        In 1848, Deere moved his growing operation 70 miles southwest to Moline, Illinois, on the east
+                        bank of the Mississippi River. The river provided water power for running a factory, as well as
+                        riverboats for bringing in raw materials and moving plows to market.
+
+                        Soon, Deere’s company was making 1,000 plows a year. Business boomed as Deere established a
+                        reputation for both his plows and his principles. Those same principles guide Deere & Company to
+                        this day. Among them was his insistence on selling only high-quality products.
+
+                        In 1868, Deere’s business was incorporated under the Deere & Company name.
+
+                        From his arrival in Moline, Deere was actively involved in civic activities, and in 1873 he
+                        became the second mayor of Moline.
+
+                        John Deere died in 1886, with his heirs leading the company for the next century.
+                    </p>
+                </div>
+            </div>
+            <div class="history-gallery-div">
+                
+                <div class="div-historical-video">
+                    <video controls src="/assets/images/video of history.mp4" class="historical-video"></video>
+                </div>
+                <div class="gallery-div">
+                    <div class="div-gallerytop">
+                        <img src="/assets/images/bio1.jpeg" class="history-img">
+                        <img src="/assets/images/bio2.jpeg" class="history-img">
+                        <img src="/assets/images/bio3.jpeg" class="history-img">
+                        <img src="/assets/images/bio4.jpeg" class="history-img">
+                    </div>
+                    <div class="div-gallerydown">
+                        <img src="/assets/images/bio9.jpg" class="history-img">
+                        <img src="/assets/images/bio6.jpg" class="history-img">
+                        <img src="/assets/images/bio7.jpg" class="history-img">
+                        <img src="/assets/images/bio8.jpg" class="history-img">
+                    </div>
+                    
+                </div>
+            </div> 
+            
+            <div class="div-products" id="products">
+                <h1 class="h-products">
+                    Products Categories
+                    <div class="categories-explanation">
+                        <ul class="ul-categories">
+                            <li class="li-categories">harvester</li>
+                            <li class="li-categories">movers</li>
+                            <li class="li-categories">compact tractors</li>
+                            <li class="li-categories">used equipments</li>
+                            <li class="li-categories">compact construction equipments</li>
+                            <li class="li-categories">excavators</li>
+                        </ul>
+                    </div>
+                </h1>
+                <div class="div-harvesters">
+                    <img  class="harvest-img"   src="/assets/images/p1.jpg">
+                    <img  class="harvest-img"   src="/assets/images/p2.png">
+                    <img  class="harvest-img"   src="/assets/images/p3.png">
+                    <img  class="harvest-img"   src="/assets/images/p4.png">
+                    <img  class="harvest-img"   src="/assets/images/p5.png">
+                    <img  class="harvest-img"   src="/assets/images/p6.png">
+                </div>
+            </div>
+
+
+            <div class="section3" id="chart">
+                <div>
+                    <h2 class="section3h">
+                        The company's Market Share In Each Continent
+                    </h2>
+                </div>
+                <div class="section3chartbox">
+                    <div class="section3chartbox1">
+                        <div class="section3chartboxlefttext1">
+                            <p class="section3chartboxlefttextp1">
+                                ASIA
+                            </p>
+                            <div class="section3chartboxrighttext1">
+                                <p class="section3chartboxrighttextp1">
+                                    30%
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <div class="section3chartboxall1">
+                            <div class="section3chartboxpercent1">
+            
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="section3chartbox1">
+                        <div class="section3chartboxlefttext1">
+                            <p class="section3chartboxlefttextp1">
+                                EUROPE
+                            </p>
+                            <div class="section3chartboxrighttext1">
+                                <p class="section3chartboxrighttextp1">
+                                    75%
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <div class="section3chartboxall1">
+                            <div class="section3chartboxpercent2">
+            
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="section3chartbox1">
+                        <div class="section3chartboxlefttext1">
+                            <p class="section3chartboxlefttextp1">
+                                AFRICA
+                            </p>
+                            <div class="section3chartboxrighttext1">
+                                <p class="section3chartboxrighttextp1">
+                                    60%
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <div class="section3chartboxall1">
+                            <div class="section3chartboxpercent3">
+            
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="section3chartbox1">
+                        <div class="section3chartboxlefttext1">
+                            <p class="section3chartboxlefttextp1">
+                                AMERICA
+                            </p>
+                            <div class="section3chartboxrighttext1">
+                                <p class="section3chartboxrighttextp1">
+                                    90%
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <div class="section3chartboxall1">
+                            <div class="section3chartboxpercent4">
+            
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="section3chartbox1">
+                        <div class="section3chartboxlefttext1">
+                            <p class="section3chartboxlefttextp1">
+                                AUSTRALIA
+                            </p>
+                            <div class="section3chartboxrighttext1">
+                                <p class="section3chartboxrighttextp1">
+                                    65%
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <div class="section3chartboxall1">
+                            <div class="section3chartboxpercent5">
+            
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>    
+            <div class="down-div" id="footer">
+                <img class="down-img"  src="/assets/images/downpage.png">
+                <div class="div-social-media">
+                    <ul class="ul-social-media">
+                        <li class="li-social-madia"><a href=""><img  class="img-social-media" src="/assets/images/x.png"></a></li>
+                        <li class="li-social-madia"><a href=""><img  class="img-social-media" src="/assets/images/whatssapp.png"></a></li>
+                        <li class="li-social-madia"><a href=""><img  class="img-social-media" src="/assets/images/telegram.png"></a></li>
+                        <li class="li-social-madia"><a href=""><img  class="img-social-media" src="/assets/images/facebook.png"></a></li>
+                        <li class="li-social-madia"><a href=""><img  class="img-social-media" src="/assets/images/instagram.jpg"></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+
+            
+
+        </main>
+    </section>
+
+</body>
+
+</html>
